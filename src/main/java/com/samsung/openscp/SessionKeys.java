@@ -44,9 +44,9 @@ import javax.crypto.SecretKey;
  * Session keys for SCP. DEK only needs to be provided if you need to call {@link SecurityDomainSession#putKey}.
  */
 public class SessionKeys {
-    final SecretKey senc;
-    final SecretKey smac;
-    final SecretKey srmac;
+    public final SecretKey senc;
+    public final SecretKey smac;
+    public final SecretKey srmac;
     @Nullable
     final SecretKey dek;
 

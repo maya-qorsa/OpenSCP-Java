@@ -86,7 +86,7 @@ public class StaticKeys {
 
     // Secure Channel Protocol '03' v1.2, "4.1.5 Data Derivation Scheme"
     // NIST SP 800-108 Rev. 1, "4.1 KDF in Counter Mode"
-    static SecretKey deriveKey(final SecretKey key,
+    public static SecretKey deriveKey(final SecretKey key,
                                final byte dataDerivationConstant,
                                final byte[] context,
                                final short derivedDataLengthBits) {

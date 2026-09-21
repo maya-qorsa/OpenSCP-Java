@@ -663,7 +663,7 @@ public class SecurityDomainSession implements Closeable {
         dataEncryptor = protocol.initScp(keyParams, mode, ephemeralKeys);
     }
 
-    void authenticate(ScpKeyParams keyParams, ScpMode mode, @Nullable byte[] hostChallenge)
+    public void authenticate(ScpKeyParams keyParams, ScpMode mode, @Nullable byte[] hostChallenge)
             throws BadResponseException, ApduException, IOException {
         dataEncryptor = protocol.initScp(keyParams, mode, hostChallenge);
     }
